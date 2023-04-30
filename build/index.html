@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Momentum</title>
+</head>
+<body>
+  <div class="shadow"></div>
+  <header class="header">
+    <div class="player hidden">
+      <div class="player-controls">
+        <audio src="" ></audio>
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <div class="volume-container">
+          <div class="volume-button">
+            <div class="volume icono-volumeMedium"></div>
+          </div>
+          <div class="volume-slider">
+            <div class="volume-percentage"></div>
+          </div>
+        </div>
+      </div>
+      <div class="current-track"></div>
+      <div class="track-duration"></div>
+      <div class="seek-bar"><div class="track-time"></div></div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather hidden">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time hidden"></time>
+    <date class="date hidden"></date>
+    <div class="greeting-container hidden">
+      <span class="greeting"></span>
+      <input type="text" class="name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="links">
+      <button class="settings"></button>
+      <div class="settings-wrapper">
+        <ul class="settings-list">
+          <li class="settings-item">
+            <p class="language"></p>
+            <form>
+              <div class="show-hide">
+                <div>
+                  <label for="languageEn" class="english radio">English
+                    <input type="radio" id="languageEn" name="language" value="en">
+                  </label>
+                </div>
+                <div>
+                  <label for="languageRu" class="russian radio">Русский
+                    <input type="radio" id="languageRu" name="language" value="ru">
+                  </label>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="settings-item">
+            <p class="image-source"></p>
+            <form>
+              <div class="show-hide">
+                <div>
+                  <label for="github" class="radio">GitHub
+                    <input type="radio" id="github"  name="image-source" value="github">
+                  </label>
+                </div>
+                <div>
+                  <label for="unsplash"U class="radio">Unsplash
+                    <input type="radio" id="unsplash"  name="image-source" value="ru">
+                  </label>
+                </div>
+                <div>
+                  <label for="flickr" class="radio">Flickr
+                    <input type="radio" id="flickr"  name="image-source" value="flickr">
+                  </label>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="show-hide">
+            <div>
+              <label for="image-tag" class="img-tag-lang"></label>
+              <div class="image-tag">
+                <input type="text" id="image-tag"/>
+              </div>
+            </div>
+          </li>
+          <li class="blocks">
+            <div class="show-hide-blocks">
+              <span class="player-lang"></span>
+              <label for="player-setting" class="toggler-wrapper style-13">
+                <input type="checkbox" id="player-setting" name="player" checked>
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+            </div>
+            <div class="show-hide-blocks">
+              <span class="weather-lang"></span>
+              <label for="weather-setting" class="toggler-wrapper style-13">
+                <input type="checkbox" id="weather-setting" name="weather" checked>
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+            </div>
+            <div class="show-hide-blocks">
+              <span class="time-lang"></span>
+              <label for="time-setting" class="toggler-wrapper style-13">
+                <input type="checkbox" id="time-setting" name="time" checked>
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+            </div>
+            <div class="show-hide-blocks">
+              <span class="date-lang"></span>
+              <label for="date-setting" class="toggler-wrapper style-13">
+                <input type="checkbox" id="date-setting" name="date" checked>
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+            </div>
+            <div class="show-hide-blocks">
+              <span class="greeting-lang"></span>
+              <label for="greeting-setting" class="toggler-wrapper style-13">
+                <input type="checkbox" id="greeting-setting" name="greeting" checked>
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+            </div>
+            <div class="show-hide-blocks">
+              <span class="quotes-lang"></span>
+              <label for="quotes-setting" class="toggler-wrapper style-13">
+                <input type="checkbox" id="quotes-setting" name="quotes" checked>
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+            </div>
+            <div class="show-hide-blocks">
+              <span class="todo-lang"></span>
+              <label for="todo-setting" class="toggler-wrapper style-13">
+                <input type="checkbox" id="todo-setting" name="todo" checked>
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="quotes hidden">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="todo-list hidden">
+      <button class="todo-button"></button>
+      <div class="todo-wrapper">
+        <div class="todo-items">
+          <form id="new-task-form">
+            <input type="text" class="new-task-input">
+            <input type="submit" class="new-task-submit" value="Add task">
+          </form>
+          <div class="task-list">
+            <h3>Tasks</h3>
+            <div id="tasks"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="logo">
+    <div class="logo-container">
+      <a href="https://github.com/SergioAJS" class="github" target="_blank"></a>
+      <div class="year">© 2022</div>
+      <a href="https://rs.school/js/" class="course" target="_blank"></a>
+    </div>
+  </div>
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>
