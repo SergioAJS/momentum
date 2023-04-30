@@ -2,8 +2,6 @@
 
 ## Structure of the application
 
-___
-
 ### The app consists of six functional blocks
 
 1. Clock and calendar
